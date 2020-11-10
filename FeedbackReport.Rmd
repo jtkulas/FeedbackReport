@@ -9,6 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Structure
+
+We're planning three phases of feedback report:
+
+1. static .pdf
+2. forgot
+3. dynmic dashboard
+
 ## Ideas 
 
 We could include "engagement profiles" for individuals to increase response rates 
