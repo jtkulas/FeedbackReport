@@ -1,8 +1,18 @@
 ---
 title: "Engagement Feedback Report"
 author: "Eagle IO"
-date: "11/10/2020"
-output: html_document
+date: 'Most recently updated `r format(Sys.time(), "%A %B %d %Y %X")`'
+header-includes:
+- \usepackage{pdflscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \usepackage{titling}
+- \pretitle{\begin{center}\LARGE\includegraphics[width=12cm]{tech.jpg}\\[\bigskipamount]}
+- \posttitle{\end{center}}
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 4
 ---
 
 ```{r setup, include=FALSE}
@@ -22,17 +32,3 @@ We're planning three phases of feedback report:
 We could include "engagement profiles" for individuals to increase response rates 
 We could include "engagement profiles at the organizational level, giving them an overview of the type of workforce they have depending on the engagement results 
 We could include descriptions of what each category of vigor, absorption, and dedication look like at each level. 
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
